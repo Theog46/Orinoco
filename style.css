@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'meghansfont';
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    margin-right: 20%;
+    font-size: 3em;
+    background-image: linear-gradient(135deg, #e38913, #8f5bfe);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: default;
+}
+.index_title {
+  font-size: 2em;
+}
+h3 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+header {
+    background-color: #F3E9F1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+header div {
+  min-width: 400px;
+  margin-left: 0.6%;
+}
+footer {
+    background-color: #F3E9F1;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+#background {
+    background-image: url(./images/background.jpg);
+}
+#teddiesList {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1%;
+}
+
+.banner_text {
+    font-size: 2em;
+    width: 45%;
+    display: block;
+    padding-top: 10%;
+}
+.banner_text div {
+    height: 200px;
+    margin-left: 10%;
+}
+.banner_text div {
+    height: 250px;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 15%;
+}
+.ours_name, .introProducts {
+    font-size: 2em;
+    text-align: center;
+}
+.introProducts {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.products {
+    color: black;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+#showPriceBox {
+    background-color: #F3E9F1;
+    width: 400px;
+    height: 50px;
+    font-size: 1.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px 1px rgba(119, 119, 119, 0.75);
+    margin-top: 1%;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.place_teddie {
+    height: 650px;
+}
+#bloc_2 {
+    display: flex;
+}
+.bloc_2_place {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6%;
+    height: 650px;
+    width: 600px;
+}
+.teddieName, .teddiePrice {
+    font-size: 2em;
+}
+.teddieName, .teddiePrice, .number-input, .addtoBasket {
+    margin-top: 15%;
+}
+#bloc_1 {
+  height: 700px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img_zoom {
+
+  transition: 1s;
+  cursor: zoom-in;
+}
+.img_zoom:hover {
+  width: 30%;
+  height: 60%;
+}
+.choice_color {
+  font-size: 2em;
+}
+#choix_option {
+  display: flex;
+  justify-content: center;
+  margin-top: 12%;
+}
+#mySelect {
+  font-size: 2em;
+}
+.addBasket {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+}
+#ajout_panier {
+  font-size: 1.6em;
+  width: 80%;
+}
+#bloc_1 h3 {
+  margin-top: 1.5%;
+}
+.teddie_price, .teddie_resume {
+  font-size: 2em;
+  margin-top: 2%;
+}
+.confirmation_bloc {
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  line-height: 1.6em;
+}
+.button_home {
+  font-size: 1em;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #F3E9F1;
+  transition: 0.7s;
+}
+.button_home:hover {
+  background-color: white;
+  border: 1px solid black;
+}
+.button_place {
+  display: flex;
+  justify-content: center;
+}
+.conf_text div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.text_icon {
+  height: 150px;
+}
+.fa-grin-hearts {
+ font-size: 1.5em;
+}
+.table {
+  border: 2px solid black;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 50px;
+  width: 80%;
+  display: flex;
+}
+.product_summary {
+  display: flex;
+  width: 100%;
+}
+.prix_panier {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  margin: auto;
+  font-size: 2em;
+}
+.quantity_cursor {
+  margin: auto;
+}
+.quantity_cursor td {
+  padding: 10px;
+}
+#empty_basket, #commande {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: 0.4s;
+  margin: auto auto 20px auto;
+}
+#empty_basket:hover, #commande:hover {
+  color: #e38913;
+  font-size: 17px;
+}
+#button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.formulaire {
+  display: none;
+}
+.form_show {
+  display: block;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:rgb(70 66 63 / 50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form_show div {
+  box-sizing: border-box;
+  padding: 10px 0 10px 0;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 1.6em;
+  border-radius: 20px;
+  top: 2%;
+}
+.form_show div form input {
+  width: 80%;
+  margin-bottom: 15px;
+  line-height: 30px;
+  border: 1px solid #66385d;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+  border-radius: 3px;
+  margin: 2% 10% 2% 10%;
+}
+.form_show div i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+}
+.fa-times-circle{
+  cursor: pointer;
+  transition: 0.4s;
+}
+.fa-times-circle:hover {
+  color: red;
+}
+.table i {
+  font-size: 30px;
+}
+.ajout_panier {
+  min-height: 40px;
+  min-width: 130px;
+  font-size: 1em;
+}
+/* PAGE INDEX ELEMENT */
+.product_card {
+  border : 2px solid black;
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+}
+.product_card p {
+  font-size: 1.8em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100px;
+}
+.description {
+  margin-left: 5%;
+}
+.product_card a {
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  color: black;
+  transition: 0.4s ease-in-out;
+}
+.product_card a:hover {
+  scale: 1.2;
+}
+/* PAGE PANIER */
+
+
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+
+  
+/* INPUT NOMBRE TEDDIES */
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+  
+  .number-input {
+    border: 0;
+    display: inline-flex;
+  }
+  
+  .number-input,
+  .number-input * {
+    box-sizing: border-box;
+  }
+  
+  .number-input button {
+    outline:none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    box-shadow: 0px 0px 1px #474747;
+    border-radius: 50%;
+  }
+  
+  .number-input button:before,
+  .number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 1rem;
+    height: 2px;
+    background-color: #212121;
+    transform: translate(-50%, -50%);
+  }
+  .number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  
+  .number-input input[type=number] {
+    font-family: sans-serif;
+    max-width: 5rem;
+    padding: .5rem;
+    border: none;
+    border-width: 0 2px;
+    font-size: 2rem;
+    height: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color:#9be3df;
+  }
+
+/* Images */
+#logo {
+    width: 15%;
+    margin-right: 10%;
+}
+.panier, .accueil {
+    font-size: 2em;
+    color: black;
+}
+.banner {
+    background-image: url("./images/banner.jpg");
+    background-size: cover;
+    height: 800px;
+}
+.fa-arrow-down {
+    font-size: 3em;
+    margin-left: 50%;
+}
+.hamburger_panier {
+  display: flex;
+  justify-content: space-around;
+}
+/* Animations */
+.accueil, .products, .panier {
+    transition: all 0.4s ease-in-out;
+}
+.accueil:hover, .products:hover, .panier:hover, h3 {
+    background-image: linear-gradient(135deg, #e38913, #8f5bfe);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+/* RESPONSIVE */ 
+@media only screen and (min-width: 628px) and (max-width: 1100px) {
+  section .banner {
+    background-image: url("./images/bg_responsive.PNG");
+    background-position: center;
+  }
+  header {
+    min-height: 130px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .panier {
+    margin-right: 1%;
+    min-width: 130px;
+  }
+  h1 {
+    text-align: center;
+  }
+  #logo {
+    min-width: 25%;
+  }
+  .banner_text {
+    min-width: 600px;
+  }
+  .teddie_resume {
+    text-align: center;
+  }
+  .resp_logo {
+    display: none;
+  }
+  .hamburger_panier {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 80px;
+  }
+  .img_zoom:hover {
+    height: 50%;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  section .product_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .description {
+    margin-left: auto;
+  }
+  .product_card img, .product_card a {
+    margin-top: 3%;
+  }
+  .product_card a {
+    margin-bottom: 2%;;
+  }
+  .hamburger {
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    }
+    .resp_logo {
+      display: none;
+    }
+    header {
+      min-height: 130px;
+    }
+    header div {
+      min-width: 200px;
+    }
+}
+@media only screen and (max-width: 627px) {
+  #logo {
+    display: none;
+  }
+  .banner_text {
+    min-width: 400px;
+  }
+  .product_card .description {
+    margin-top: 10%;
+  }
+  .img_zoom:hover {
+    height: 100%;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 333px) {
+  .product_card .description {
+    margin-top: 4em;
+  }
+}
+@media only screen and (max-width: 927px) {
+  .product_summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .product_summary h3 {
+    text-align: center;
+  }
+  h4 {
+    font-size: 1em;
+    max-width: 400px;
+  }
+}
+@media only screen and (max-width: 689px) {
+  h4 {
+    max-width: 150px;
+  }
+}
